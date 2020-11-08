@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS TRACKER</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+</head>
+<body>
+    <div>
+      <h1>ISS TRACKER</h1>
+      <p class="desc">This app trackes iss and notifies me when iss is near me </p>
+      <div id="map-div"></div>
+      <div id="details">
+          <div>
+              Time: 
+              <span class="time"></span> 
+          </div>
+          <div>
+              Latitude: 
+              <span class="latitude"></span>
+          </div>
+          <div>
+              Longitude: 
+              <span class="longitude"></span>
+          </div>
+          <div> 
+              Speed:
+              <span class="speed"></span> KM
+          </div>
+          <div>
+              Altitude: 
+              <span class="altitude"></span>
+          </div>
+          <div>
+              Visibilty: 
+              <span class="visiblity"></span>
+          </div>
+      </div>
+      <div class="footer">
+         <div>
+            ISS  <span class="nearme"></span> Visible to me 
+         </div>
+         <div class="credits">
+            <h3>Created by Varun</h3>
+         </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
